@@ -12,11 +12,7 @@ export function Footer() {
               Finance writer dedicated to making complex topics accessible and
               engaging.
             </p>
-            <div className="flex space-x-4">
-              <a href="https://linkedin.com/" className="hover:text-[#ffc940] transition-colors" aria-label="LinkedIn">
-                <Linkedin size={20} />
-              </a>
-            </div>
+       
           </div>
           <div>
             <h3 className="text-xl font-bold mb-4">Quick Links</h3>
