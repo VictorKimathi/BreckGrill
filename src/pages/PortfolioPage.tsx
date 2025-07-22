@@ -3,69 +3,27 @@ import { ProjectCard } from '../components/ProjectCard';
 import { FilterIcon } from 'lucide-react';
 export function PortfolioPage() {
   const [activeFilter, setActiveFilter] = useState<string>('all');
-  const portfolioProjects = [{
+  const portfolioProjects = [ {
     id: '1',
-    title: 'Understanding IRAs: A Complete Guide',
-    description: 'A comprehensive guide to Individual Retirement Accounts, breaking down complex retirement options into accessible steps.',
-    client: 'For Stacked Wallet',
-    category: 'Retirement',
-    image: 'https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80'
+    title: 'How to Build a Stable Budget on an Unpredictable Income',
+    description: 'A stable budget is possible without a fixed paycheck. Freelancers, gig workers, and contractors can stay in control by setting clear limits on spending and planning around actual earnings. A baseline of essential costs, combined with a clear account system, helps prevent shortfalls when income dips.',
+    category: 'Budgeting & Money Management',
+    image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
+    href: 'How_to_Build_a_Stable_Budget.pdf'
   }, {
     id: '2',
-    title: 'Student Loan Forgiveness Programs',
-    description: 'Detailed analysis of available student loan forgiveness programs and qualification requirements.',
-    client: 'Finance Education Platform',
-    category: 'Debt Management',
-    image: 'https://images.unsplash.com/photo-1434030216411-0b793f4b4173?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80'
+    title: 'Why High Earners Should Rethink Their Debt Strategy Right After a Surge',
+    description: 'A spike in income changes more than the size of your bank balance. It shifts your leverage. For freelancers, consultants, and commission-based professionals, a high-earning period can temporarily strengthen your financial profile. Lenders often respond by offering better refinancing terms, lower interest rates, or faster payoff options. Overlooking this opportunity can mean missing a narrow window to reduce long-term debt costs and improve financial stability.',
+    category: 'Debt Management & Strategic Spending',
+    image: 'https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
+    href: 'Why_High_Earners_Should_Rethink.pdf'
   }, {
     id: '3',
-    title: 'Cryptocurrency for Beginners',
-    description: 'An accessible introduction to cryptocurrency concepts, investments, and market trends for newcomers.',
-    client: 'Crypto News Blog',
-    category: 'Investing',
-    image: 'https://images.unsplash.com/photo-1518546305927-5a555bb7020d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80'
-  }, {
-    id: '4',
-    title: 'How to Improve Your Credit Score',
-    description: 'Actionable strategies to build and maintain a strong credit score, with step-by-step guidance.',
-    client: 'Credit Education Website',
-    category: 'Credit',
-    image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80'
-  }, {
-    id: '5',
-    title: 'The Ultimate Guide to Emergency Funds',
-    description: 'Everything you need to know about building and maintaining an emergency fund that works for your situation.',
-    client: 'Personal Finance Blog',
-    category: 'Budgeting',
-    image: 'https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80'
-  }, {
-    id: '6',
-    title: 'Understanding Insurance Policies',
-    description: 'A breakdown of different insurance types and how to choose the right coverage for your needs.',
-    client: 'Insurance Comparison Site',
-    category: 'Insurance',
-    image: 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80'
-  }, {
-    id: '7',
-    title: '10 Steps to Financial Independence',
-    description: 'A roadmap for achieving financial freedom with practical steps anyone can follow.',
-    client: 'Financial Wellness Newsletter',
-    category: 'Budgeting',
-    image: 'https://images.unsplash.com/photo-1553729459-efe14ef6055d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80'
-  }, {
-    id: '8',
-    title: 'NFTs Explained: Beyond the Hype',
-    description: 'A clear explanation of non-fungible tokens, their uses, risks, and potential future in the digital economy.',
-    client: 'Tech & Finance Publication',
-    category: 'Investing',
-    image: 'https://images.unsplash.com/photo-1639762681057-408e52192e55?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80'
-  }, {
-    id: '9',
-    title: 'How to Create a Monthly Budget That Works',
-    description: 'Practical budgeting methods and tools to help readers take control of their finances.',
-    client: 'Personal Finance App',
-    category: 'Budgeting',
-    image: 'https://images.unsplash.com/photo-1554224154-22dec7ec8818?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80'
+    title: 'The Financial Checklist Every Blended Family Should Complete in Year One',
+    description: 'Blended families face money challenges that most traditional budgeting advice does not cover. When two homes come together, there are often financial ties to the past that continue to affect the present. These may include child support, spousal maintenance, shared custody costs, outstanding debts, and commitments to former partners. In many cases, both individuals bring different money habits, income levels, and expectations into the new arrangement. This makes managing household finances more complex in the first year.',
+    category: 'Family Finance & Life Transitions',
+    image: 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
+    href: 'The_Financial_Checklist_Every_Blended_Family.pdf'
   }];
   const filters = [{
     value: 'all',
