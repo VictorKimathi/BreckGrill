@@ -22,7 +22,7 @@ export function AboutPage() {
             {/* Left Column - Photo */}
             <div className="lg:col-span-1">
               <div className="sticky top-24">
-                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Breck Grill" className="w-full rounded-lg shadow-md" />
+                <img src="about.jpg" alt="Breck Grill" className="w-full rounded-lg shadow-md" />
                 <div className="mt-8">
                   <Button to="/contact" variant="secondary" className="w-full mb-4">
                     Contact Me
